@@ -75,6 +75,13 @@ Flappy Bird の bird の角度とかも簡単に出来る。
 
 もちろん Sprite Animation も対応している。
 
+チュートリアルとか
+---
+
+- Flappy Bird をつくる http://blog.lessmilk.com/make-html5-games-with-phaser-1/
+
+http://syonx.hatenablog.com/entry/2014/07/05/103418 にまとまっている
+
 参考リンク
 ---
 
