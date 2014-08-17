@@ -59,3 +59,47 @@ http://qiita.com/itoz/items/cac060f940e67d97ab9d
 .pbxproj がキチガイみたいにコンフリクトするのでこういうのを使う。
 
 https://github.com/simonwagner/mergepbx
+
+Test
+---
+
+テスト、`Specta` と `Expecta` 使うとイイ感じに RSpec 風に出来る。大変黒魔術満載でよい。
+
+```objc
+#import <Specta/Specta.h>
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+
+SpecBegin(AQModel)
+
+describe(@"AQAquasyncModelRequirement", ^{\
+    describe(@"-aq_resolveConflict:delta;", ^{
+        NSDictionary *delta = @{
+                                @"gid": @"aaaaaaaa-e29b-41d4-a716-446655dd0000",
+                                @"localTimestamp": @2000000000,
+                                @"deviceToken": [AQUtil getDeviceToken],
+                                @"isDeleted": @NO
+                                };
+        it(@"should update from delta", ^{
+            AQModel *model = [[AQModel alloc] init];
+            model.gid = @"aaaaaaaa-e29b-41d4-a716-446655dd0000";
+            [model save];
+            [model aq_resolveConflict:delta];
+            expect(model.localTimestamp).to.equal(2000000000);
+        });
+        
+        it(@"updated record should not be dirty", ^{
+            AQModel *model = [[AQModel alloc] init];
+            model.gid = @"aaaaaaaa-e29b-41d4-a716-446655dd0000";
+            [model save];
+            [model undirty];
+            [model aq_resolveConflict:delta];
+            expect(model.isDirty).to.equal(false);
+        });
+    });
+});
+
+SpecEnd
+```
+
+Mock は `OCMockito`.
