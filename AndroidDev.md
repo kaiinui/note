@@ -23,10 +23,10 @@ Callback 的なものはほとんど Background で走る。
 
 UI を触るときは `runOnUiThread(Runnable)` を使う必要がある。相当たくさんの場面で出てくる。
 
-GridView, header をサポートしていない
+GridView, HeaderView をサポートしていない
 ---
 
-GridView なぜか header をサポートしていない。
+GridView なぜか HeaderView をサポートしていない。
 
 じゃあ GridView の上に View を置いてやればいいじゃん。は間違い。
 
@@ -38,3 +38,12 @@ Google の公式 training コードでは、`< n` までの `getView()` で Head
 やれば分かるけど相当コードが汚くなる。 `position - numberOfColumn` とかたくさん出てくる。もちろん `numberOfColumn` 忘れると要素がズレる。
 
 https://github.com/maurycyw/HeaderGridView こういうのを使うとよい。
+
+`getViewById()` のキャストがキモい
+---
+
+`getViewById()`, `TextView` とかにキャストしまくっててキモい感じは有る。
+
+https://github.com/JakeWharton/butterknife 使うとコード短くなるしその辺隠れて良い。
+
+`@OnClick()` とか相当良い。
