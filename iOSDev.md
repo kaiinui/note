@@ -38,6 +38,41 @@ ReactiveCocoa, iOS で Rx 出来る。
 
 * ReactiveCocoa勉強会関西を開催しました #rac_kansai http://ninjinkun.hatenablog.com/entry/2014/08/03/204348
 
+Data Store
+---
+
+CoreData, 生で使うの相当だるいのでこのあたりを使う。
+
+- Realm
+- MagicalRecord
+
+###Realm
+
+SQLite alternative な mobile-oriented database.
+
+1 MB くらいの footprint で色々いい感じのデータベース使える。
+
+1. ORM
+2. Transaction
+3. Thread Safe
+
+ORM が大変良く出来ている。
+
+```objc
+// Model
+Dog *mydog = [[Dog alloc] init];
+mydog.name = @"Rex"; 
+
+// Save
+RLMRealm *realm = [RLMRealm defaultRealm];
+[realm beginWriteTransaction];
+[realm addObject:mydog];
+[realm commitWriteTransaction];
+
+// Query
+RLMArray *r = [Dog objectsWhere:@"age > 8"];
+```
+
 KeyChain
 ---
 
