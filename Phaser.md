@@ -21,6 +21,10 @@ function create() {
 
 かなりミニマルにかけていい感じ。コード量としては enchant.js とかとあんまり変わらない感ある。
 
+![](http://cdn-ak.f.st-hatena.com/images/fotolife/s/syonx/20140705/20140705093433.png)
+
+Flappy Bird とか簡単にかける
+
 Compatibility
 ---
 
@@ -63,6 +67,13 @@ enchant.js みたいなミニマルなやつも本体だけで 220 KB くらい.
 - ネットワーク関連無いので、自前で書く必要ある。
 - `Scene` が何故か無いので `State` をイイ感じに使ってちょめちょめする必要がある。
 - クソ重い Phaser をロードするブートストラッパーが無いので、ロード画面とか良い感じにするには bootstrapper を書く必要がある
+ 
+###Sprite
+
+`Sprite` はけっこう充実していて、`.angle` とかある。これを弄るだけでスプライトが回転してくれるっぽい（回転の transition とか設定できるのかな？）
+Flappy Bird の bird の角度とかも簡単に出来る。
+
+もちろん Sprite Animation も対応している。
 
 参考リンク
 ---
