@@ -36,6 +36,11 @@ http://old.haxe.org/com/ide
 せっかく型があって補完とかコンパイルエラーいい感じなのに IDE のエコシステムが弱いのは残念。
 Sublime もプラグイン次第で色々出来るのだろうか？
 
+https://github.com/HaxeIDE
+
+intellij-haxe とかある. あと atom-autocomplete
+
+
 ライブラリとの連携
 ---
 
