@@ -63,3 +63,9 @@ enchant.js みたいなミニマルなやつも本体だけで 220 KB くらい.
 - ネットワーク関連無いので、自前で書く必要ある。
 - `Scene` が何故か無いので `State` をイイ感じに使ってちょめちょめする必要がある。
 - クソ重い Phaser をロードするブートストラッパーが無いので、ロード画面とか良い感じにするには bootstrapper を書く必要がある
+
+参考リンク
+---
+
+- HTML5ゲームエンジン「Phaser」が初心者とモバイルにやさしくていい感じです http://syonx.hatenablog.com/entry/2014/07/05/103418
+- Phaser まとめ http://syon-wiki.herokuapp.com/Phaser
