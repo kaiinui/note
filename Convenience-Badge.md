@@ -1,4 +1,4 @@
 - http://progressed.io/bar/20 ![](http://progressed.io/bar/20)
 - http://img.shields.io/cocoapods/v/AQMSecureRandom.svg?style=flat ![](http://img.shields.io/cocoapods/v/AQMSecureRandom.svg?style=flat)
 - https://badge.fury.io/rb/middleman-inliner.svg ![](https://badge.fury.io/rb/middleman-inliner.svg)
-- https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser ![](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
+- https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser ![](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser/badge.svg?style=flat)
