@@ -50,6 +50,8 @@ Component と一括りにされがちなものを Component という再利用�
 
 - `.block__element--modifier`
 
+e.g. `.c-button__icon`, `.c-button__icon--rev`
+
 ###運用規則
 
 安易なカスケードと依存関係を抑える。
