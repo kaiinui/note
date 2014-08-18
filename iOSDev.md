@@ -4,13 +4,14 @@ iOS Development
 言語の基本仕様
 ---
 
-- Object の Messaging 教に入信した人が作った言語っぽい。どんなメソッド呼び出しも明示的にメッセージングである。
+- Object の Messaging 教に入信した人が作った言語っぽい。どんなメソッド呼び出しも明示的にメッセージングである。self のメソッドも [self hogeMethod]; としないと呼べないあたりが特に。
 - nil receiver でのメソッド呼び出しは無視される
 - Key-value coding という仕組みがあって、静的言語なのに property が動的に弄れたりする
 - Messaging を forward 出来たりする（Ruby の `method_missing` 相当）
 - method を swizzling 出来る（メソッドの中身入れ替えられたりする。）
 - ARC (Automatic Reference Counting) を用いてのメモリ管理。明示的に `free` する必要は無い。
    * Android は GC 搭載！富豪的！
+- 全体的によく出来てる言語の気がするけど、メソッド名が長いのが嫌われる。どうせ補完するから書く分には困らないのだけど、確かに初見だと辛い。
 
 Blocks の循環参照
 ---
