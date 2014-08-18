@@ -1,0 +1,9 @@
+Android で Gradle でオレオレライブラリをやる方法とか
+---
+
+http://u1aryz.blogspot.jp/2013/06/githubmavenandroidaar.html
+
+gradle の maven プラグインで maven 形式でビルドして、local に upload.
+そのファイル群を GitHub pages に突っ込むことでオレオレ maven レポジトリになる。
+
+けっこうだるい
