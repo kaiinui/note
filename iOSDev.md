@@ -150,3 +150,9 @@ SpecEnd
 ```
 
 Mock は `OCMockito`.
+
+他参考
+---
+
+- https://github.com/hatena/ios-Intern-Bookmark-2013 - はてなの iOS インターン向け研修
+- https://github.com/mixi-inc/iOSTraining/wiki/ - mixi の研修資料
