@@ -1,6 +1,8 @@
 iOS Development
 ===
 
+色んな数値とか ⇒ http://qiita.com/mox2/items/d1d112faac644976791a
+
 言語の基本仕様
 ---
 
