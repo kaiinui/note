@@ -100,6 +100,13 @@ https://github.com/simonwagner/mergepbx
 
 導入 ⇒ http://qiita.com/gfx/items/9182b9591c1589153897
 
+R.m
+---
+
+rdotm https://github.com/ksoichiro/rdotm
+
+を使うと Android ライクに [R strings_hoge]; で取れる。ミススペルで表示されないミスが無くなる。
+
 Test
 ---
 
