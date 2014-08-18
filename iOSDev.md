@@ -95,6 +95,8 @@ http://qiita.com/itoz/items/cac060f940e67d97ab9d
 
 https://github.com/simonwagner/mergepbx
 
+導入 ⇒ http://qiita.com/gfx/items/9182b9591c1589153897
+
 Test
 ---
 
