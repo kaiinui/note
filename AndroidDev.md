@@ -49,3 +49,10 @@ https://github.com/maurycyw/HeaderGridView こういうのを使うとよい。
 https://github.com/JakeWharton/butterknife 使うとコード短くなるしその辺隠れて良い。
 
 `@OnClick()` とか相当良い。
+
+テスト
+---
+
+UI テストは Robotium がまともらしい。 espresso はメンテされてないとのこと…
+
+https://code.google.com/p/robotium/
