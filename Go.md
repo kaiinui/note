@@ -18,6 +18,8 @@ Sublime しかないっぽい。
 - コンパイルエラーのリアルタイムチェックがない。何のための
 - Sublime そもそも色々足りなさ過ぎてつらい。プラグイン色々探すのめどんくさい。
 
+[追記]あるらしいけど何故か動かない。設定めんどくせ。クソが。
+
 エラー
 ---
 
@@ -62,7 +64,7 @@ Libraries
 
 ###Template
 
-- [Gold](https://github.com/yosssi/gold) - Jade/Slim like template. has official sublime text plugin.
+- [Gold](https://github.com/yosssi/gold) - Jade/Slim like template. has official sublime text plugin. （Ace のほうが推奨？）
 
 Utilities
 ---
@@ -72,7 +74,7 @@ Utilities
 Test
 ---
 
-[Ginkgo](http://onsi.github.io/ginkgo/) という RSpec 風のやつがある。
+[Ginkgo](http://onsi.github.io/ginkgo/) が RSpec 風
 
 ```go
 var _ = Describe("Book", func() {
