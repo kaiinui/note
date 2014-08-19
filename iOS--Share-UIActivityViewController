@@ -1,0 +1,11 @@
+UIActivityViewController
+---
+
+事実上の標準 Share の規格。前まで、独自実装してた。
+
+- http://d.hatena.ne.jp/shu223/20121127/1354017518 - たった1行でWebサービスと連携！UIActivity のまとめリポジトリをつくりましたAdd Star
+- http://tech.kayac.com/archive/19_ios6uiacitivity_techkayaccom_advent_calendar_2012.html - #19 「iOS6のカスタムUIAcitivityのつくりかた」 tech.kayac.com Advent Calendar 2012Add Star
+- http://zutto-megane.com/objective-c/post-367/ - 写真を簡単にSNSに連携できる！UIActivityViewController
+
+共有、アホらしいほどつらかったのが UIActivityViewController で公式サポートされた。
+共有ビューはコレ使おう。
