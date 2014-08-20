@@ -10,7 +10,7 @@ Gradle
 
 ```groovy
 // /build.gradle
-classpath 'org.aspectj:aspectjtools:1.8.1'
+classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'
 
 apply plugin: 'android-aspectj'
 ```
