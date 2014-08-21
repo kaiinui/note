@@ -1,3 +1,7 @@
+http://qiita.com/koogawa/items/994878047f76cf125b2d
+
+あと某氏から教えてもらった（一応 NDA で伏せておく）
+
 ```
 知見
 ・UIView ならだいたい何でも入る（なんでも出来る）
