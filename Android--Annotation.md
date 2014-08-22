@@ -114,7 +114,7 @@ textView.setText("WHOA!");
 
 単純で、
 
-```
+```java
 public class BananaKnife {
     public static void inject(Activity target) {
         InjectView annotation = field.getAnnotation(InjectView.class);
