@@ -46,3 +46,36 @@ public @interface InjectView {
 
 これで呼び出し側からは `@InjectView(R.id.text_view) TextView textView;` という風に出来る。
 
+利用方法
+--
+
+全うな利用方法は、これをタグとして、他の場所から色々なことをする。
+ButterKnife などの DI が良い例。
+
+アノテーションの扱い方
+---
+
+```java
+for (Field field : this.getClass().getDeclaredFields()) {
+    InjectView annotation = field.getAnnotation(InjectView.class);
+    if (annotation != null){
+        Log.i("ANNOTATION", "value:" + annotation.value());
+    }
+}
+```
+
+Java には `Class`, `Method`, `Field` っていう如何にもなクラスが用意されている。これらは、`instance.getClass()`, `class.getMethods()`, `class.getDeclaredFields()` で得ることが出来る。
+
+これらは `field.getName()` とか色々することが出来、色々出来そうな感じが有る。
+
+注意は、`class.getFields()` があるがよくわからないやつが結構返ってくる。`class.getDeclaredFields()` を使う。
+
+こうすることで
+
+```
+08-22 17:50:45.409  24891-24891/com.kaiinui.sampleannotation I/MyActivity﹕ textView
+08-22 17:50:45.409  24891-24891/com.kaiinui.sampleannotation I/MyActivity﹕ value:2131230721
+```
+
+といったログを得ることが出来る。
+
