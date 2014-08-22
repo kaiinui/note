@@ -17,9 +17,9 @@ public @interface InjectView {
 
 `id=` とか付けたくない場合は `value()` とすれば
 
-```
+```java
 public @interface InjectView {
-    int value()
+    int value();
 }
 ```
 
@@ -34,7 +34,7 @@ public @interface InjectView {
 `@Target` はどんなものにアノテーションを付けられるかを宣言出来る。
 `FIELD`, `METHOD`, `CLASS` などがある。 `ANNOTATION` というのもあってイイ感じに楽しいことが出来る。
 
-```
+```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface InjectView {
@@ -83,6 +83,8 @@ MVP の ButterKnife
 ---
 
 ```java
+// MyActivity.java
+
 @InjectView(R.id.text_view) TextView textView;
 
 // onCreate
@@ -117,14 +119,16 @@ textView.setText("WHOA!");
 ```java
 public class BananaKnife {
     public static void inject(Activity target) {
-        InjectView annotation = field.getAnnotation(InjectView.class);
-        if (annotation == null) { return; }
+        for (Field field : target.getClass().getDeclaredFields()) {
+            InjectView annotation = field.getAnnotation(InjectView.class);
+            if (annotation == null) { return; }
     
-        int id = annotation.value();
-        View view = target.findViewById(id);
-        try {
-            field.set(target, view);
-        } catch (IllegalAccessException e) { }
+            int id = annotation.value();
+            View view = target.findViewById(id);
+            try {
+                field.set(target, view);
+            } catch (IllegalAccessException e) { }
+        }
     }
 }
 ```
