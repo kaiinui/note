@@ -79,3 +79,32 @@ Java には `Class`, `Method`, `Field` っていう如何にもなクラスが�
 
 といったログを得ることが出来る。
 
+MVP の ButterKnife
+---
+
+```java
+@InjectView(R.id.text_view) TextView textView;
+
+// onCreate
+
+for (Field field : this.getClass().getDeclaredFields()) {
+    InjectView annotation = field.getAnnotation(InjectView.class);
+    Log.i("MyActivity", field.getName());
+    if (annotation == null) { return; }
+    
+    int id = annotation.value();
+    View view = this.findViewById(id);
+    try {
+        field.set(this, view);
+    } catch (IllegalAccessException e) { }
+}
+
+textView.setText("WHOA!");
+```
+
+こんなクソコードで最低限の ButterKnife を作れる。
+
+注意点は
+
+* `getAnnotation()` は Nullable
+* `field.set(targetInstance, value)` で `targetInstance` の当該フィールドに `value` を突っ込める (例外は `IllegalAccessException`)
