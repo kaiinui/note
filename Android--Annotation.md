@@ -108,3 +108,25 @@ textView.setText("WHOA!");
 
 * `getAnnotation()` は Nullable
 * `field.set(targetInstance, value)` で `targetInstance` の当該フィールドに `value` を突っ込める (例外は `IllegalAccessException`)
+
+外部からやるようにする
+---
+
+単純で、
+
+```
+public class BananaKnife {
+    public static void inject(Activity target) {
+        InjectView annotation = field.getAnnotation(InjectView.class);
+        if (annotation == null) { return; }
+    
+        int id = annotation.value();
+        View view = target.findViewById(id);
+        try {
+            field.set(target, view);
+        } catch (IllegalAccessException e) { }
+    }
+}
+```
+
+という感じにする。注意点は、`target` の該当フィールドが `private` だと `Exception` 出る。
