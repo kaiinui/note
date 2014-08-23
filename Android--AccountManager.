@@ -1,0 +1,6 @@
+AccountManager
+===
+
+- Username と authToken の組み合わせで管理。
+- 非同期API
+- ちゃんとそこそこ暗号化して情報持ってくれるっぽい
