@@ -13,6 +13,16 @@ Google は Design Doc と呼ばれる設計文書を、実際に設計・実装�
 
 など。
 
+> プロジェクト立ち上げ時の 1～2週間をかけて書く。ある程度ポイントが書け たら、もうコーディングへ。
+
+(http://blog.livedoor.jp/heitatta/archives/54439839.html)
+
+「コードをガッツリ書ける人が」「コードを書く時間を捨てて」「1-2w というそこそこ長い時間を使って」書く…
+わりと人的コストをかけて書いていることが伺える。
+
+メリット
+---
+
 こういった文書を書くことには、以下のような良さがあると思った。
 
 1. 問題が浮き彫りになる（Good Problem to have.）
@@ -48,6 +58,7 @@ Design Doc は一人で書くプロダクトにも有効だが、複数人で開
 References
 ---
 
+- Google のソフトウェア・エンジニアリング http://blog.livedoor.jp/heitatta/archives/54439839.html
 - Google の Design Doc について http://d.hatena.ne.jp/cou929_la/20091116/1258373100
 - Googleのdesign docを眺めてみる http://kenmaz.hatenadiary.jp/entry/20090712/1247401684
 - Design Documents http://www.chromium.org/developers/design-documents
