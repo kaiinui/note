@@ -6,9 +6,10 @@ Aggregator
 
 - 複数クラスを跨いだ操作を担当
 
-#### References
+Repository
+---
 
-- http://www.sitepoint.com/ddd-for-rails-developers-part-3-aggregates/
+- "Persistence" を担当。（つまりデータベースに突っ込んだりするところ）
 
 Service
 ---
@@ -23,13 +24,26 @@ Entity
 - データを保持すること意外何も責務が無い
 - ActiveModel は「データの保持」以外にも責務を持っている。
 
+Presenter
+---
+
+- "Entity" の値を装飾することが責務。
+- 例: `firstName` と `lastName` を持つ Entity を用いて、Presenter が `fullName` を返す。
+- いわゆる View でこれをやりがちだが、 Presenter に分けた方が絶対に良い。
+
 番外編
 ---
 
-ActiveRecord の責務を明示的に分ければどうなるか
+ActiveModel の責務を明示的に分ければどうなるか
 
 * Entity
 * Validator
 * Repository
 * Observer (Callbacks)
 * (DatabaseAdapter)
+
+"Model is to vague."
+
+#### References
+
+- http://www.sitepoint.com/ddd-for-rails-developers-part-3-aggregates/
