@@ -17,6 +17,12 @@ Service
 - ビジネスロジックを含まず、粛々と依頼通りに何かしらの物事をこなすクラス
 - けっこう逃げの名前にもなりがち
 
+Builder
+---
+
+- なにかしらの Object を生成する責務を持つ。
+- 例： `JsonBuilder`
+
 Entity
 ---
 
@@ -30,6 +36,12 @@ Presenter
 - "Entity" の値を装飾することが責務。
 - 例: `firstName` と `lastName` を持つ Entity を用いて、Presenter が `fullName` を返す。
 - いわゆる View でこれをやりがちだが、 Presenter に分けた方が絶対に良い。
+
+Observer
+---
+
+- "Entity" の値を見て、変更があれば即座に何かにそれを伝えることが責務
+- Model の値を View に bind したりとか。
 
 番外編
 ---
