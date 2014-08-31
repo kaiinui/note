@@ -201,6 +201,19 @@ instagram とか Facebook とかは「試せる」API ドキュメントを提�
 
 がある。
 
+API Documentation
+---
+
+#### references
+
+- [Stripe API Doc](https://stripe.com/docs/api)
+- [Apiary](http://apiary.io/)
+- [How do you document your APIs?](http://www.infoq.com/research/api-documentation)
+- [Swagger](https://helloreverb.com/developers/swagger)
+- [apigee](http://apigee.com/docs/console-go/content/set-apigee-api-console)
+- [RAML tools](http://api-portal.anypoint.mulesoft.com/raml-tools?ref=apihub)
+- [RAML](http://raml.org/)
+
 Tools
 ---
 
