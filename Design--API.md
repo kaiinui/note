@@ -20,6 +20,10 @@ Etsy では API エンドポイントをモバイルチームで改造出来る�
 
 もう少し汎用的には、JSON-RPC Batch 2.0 のような方法は、解決策の一つになり得る。
 
+Etsy のような（あるいは API エンドポイントを特定アプリに特化させる）アプローチでは API のエンドポイントとクライアントが密結合になりやすい（まあ、なっても別にいいけど）
+
+なので、"A & B & C" を渡す API 、とエンドポイントを特化させるのではなく、リクエストする側が "A と B と C" をくれ！とやる作戦。
+
 - [モバイルアプリとAPIのありかたを考える2014](https://speakerdeck.com/ar_tama/mobairuapuritoapifalsearikatawokao-eru2014) - JSON-RPC Batch 2.0 について言及
 - [Facebook の Batch Request](https://developers.facebook.com/docs/graph-api/making-multiple-requests)
 - [Google Cloud Storage の Batch Request](https://developers.google.com/storage/docs/json_api/v1/how-tos/batch)
@@ -54,6 +58,10 @@ Etsy では API エンドポイントをモバイルチームで改造出来る�
 
 JSON-RPC Batch 2.0 崩れのようなリクエスト。だけども実際的で良いと思う。中身は RESTful な routing.
 実際的には単一のリクエストも route を切りつつ、`/batch` とかでバッチリクエストを JSON-RPC (風) に受けるのが良いと思った。
+
+ただし、一挙にリクエストを受ける都合上レスポンスが遅くなりがちな問題がある。
+
+Response, [Chunked Transfer Encoding](http://en.wikipedia.org/wiki/Chunked_transfer_encoding) のような受け方をする必要があるのかもしれない。
 
 Tools
 ---
