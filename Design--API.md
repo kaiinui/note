@@ -131,6 +131,55 @@ Pagination
 }
 ```
 
+Formats
+---
+
+### Request
+
+当たり前だけど GET は URL params で。 `(e.g.) ?user_id=hogehoge&password=hogehoge`
+
+POST の場合は Body に何でも詰め込めるので後述のデータ構造を全て利用出来る。
+
+### Response
+
+基本的には Dictionary 的なデータ構造で返す。（つまり JSON みたいなやつ）
+
+- JSON
+- MessagePack
+- Binary plist
+- JSONP (まあ。)
+
+Binary plist については、これを使って iOS での高速化を果たした報告が有る（http://tech.vasily.jp/backend_ios_plist/）
+
+あるいは XML のようなメタ情報をたくさん詰め込めるフォーマットを使っても良い。(が、大体 JSON みたいな使い方をされる)
+
+- XML
+
+前者 4 つはフォーマットの違いでしかないので、透過的に扱える限りは全て返せるようにしたほうが良い感じ。（XML はもう少し扱える範囲が大きいと思う）
+どうせ Dictionary を食わせて生成するのだから、少しの努力で大体何でも返せる。
+
+それぞれの端末で一番良い方法で受け取ってもらうのが一番良いと思う。
+
+当たり前だけど gzip は必ずする。
+
+Try-able API Document (Console)
+---
+
+instagram とか Facebook とかは「試せる」API ドキュメントを提供している。
+これは、API を利用する側にとっては気軽に試すことが出来て大きいコトと思う。
+（もちろん 1. API ドキュメントが整備されている 2. API クライアントライブラリ実装がある ことが一番。）
+
+- https://apigee.com/console/instagram
+- https://developers.facebook.com/tools/explorer/
+- http://petstore.swagger.wordnik.com/
+
+このような API コンソールを提供するツールとしては、
+
+- [apigee](https://apigee.com/)
+- [Swagger UI](https://github.com/wordnik/swagger-ui)
+
+がある。
+
 Tools
 ---
 
