@@ -30,7 +30,7 @@ Etsy のような（あるいは API エンドポイントを特定アプリに�
 - [AWS Product Advertising API の Batch Request](http://docs.aws.amazon.com/AWSECommerceService/latest/DG/BatchRequests.html)
 - [Rails gem: batch_api](https://github.com/arsduo/batch_api) - Facebook の Batch Request みたいな API エンドポイントを切れる gem.
 
-```
+```json
 # POST /batch
 # Content-Type: application/json
 
@@ -45,7 +45,7 @@ Etsy のような（あるいは API エンドポイントを特定アプリに�
 }
 ```
 
-```
+```json
 {
   results: [
     {status: 200, body: [{id: 1, name: "Jim-Bob"}, ...], headers: {}},
@@ -62,6 +62,74 @@ JSON-RPC Batch 2.0 崩れのようなリクエスト。だけども実際的で�
 ただし、一挙にリクエストを受ける都合上レスポンスが遅くなりがちな問題がある。
 
 Response, [Chunked Transfer Encoding](http://en.wikipedia.org/wiki/Chunked_transfer_encoding) のような受け方をする必要があるのかもしれない。
+
+Pagination
+---
+
+[Using the Graph API](https://developers.facebook.com/docs/graph-api/using-graph-api/v2.1)
+
+```json
+{
+  "data": [
+     ... Endpoint data is here
+  ],
+  "paging": {
+    "cursors": {
+      "after": "MTAxNTExOTQ1MjAwNzI5NDE=",
+      "before": "NDMyNzQyODI3OTQw"
+    },
+    "previous": "https://graph.facebook.com/me/albums?limit=25&before=NDMyNzQyODI3OTQw"
+    "next": "https://graph.facebook.com/me/albums?limit=25&after=MTAxNTExOTQ1MjAwNzI5NDE="
+  }
+}
+```
+
+[Instagram API Endpoints](http://instagram.com/developer/endpoints/)
+
+`The envelope`: API レスポンスのフォーマット。 Instagram の API レスポンスは全て envelope 形式。
+
+```json
+{
+    "meta": {
+        "code": 200
+    },
+    "data": {
+        ...
+    },
+    "pagination": {
+        "next_url": "...",
+        "next_max_id": "13872296"
+    }
+}
+```
+
+##### Meta
+
+```json
+{
+    "meta": {
+        "error_type": "OAuthException",
+        "code": 400,
+        "error_message": "..."
+    }
+}
+```
+
+#### Data
+
+普通の `body`
+
+#### Pagination
+
+```json
+{
+    ...
+    "pagination": {
+        "next_url": "https://api.instagram.com/v1/tags/puppy/media/recent?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d&max_id=13872296",
+        "next_max_id": "13872296"
+    }
+}
+```
 
 Tools
 ---
