@@ -22,3 +22,4 @@ references
 - [BehaviorクラスによるiOSアプリケーションの設計](http://tech.vasily.jp/ios_behavior_pattern)
 - [iOS/Androidアプリエンジニアが理解すべき「Model」の振る舞い](http://www.slideshare.net/mokemokechicken/iosandroidmodel)
 - [JLRoutes](https://github.com/joeldev/JLRoutes)
+- [Apple Templates Considered Harmful](http://modocache.svbtle.com/apple-templates-considered-harmful)
