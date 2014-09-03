@@ -41,3 +41,4 @@ Device-side ID generating では？
 
 - http://qiita.com/daisy1754/items/98a6e6b17d8161eab081
 - http://developer.smartnews.be/blog/2013/07/31/shakeflake-is-a-tool-for-generating-unique-id-numbers/
+- http://siguniang.wordpress.com/2013/03/17/stop-using-numbers-as-ids-just-use-uuids/
