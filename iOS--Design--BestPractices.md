@@ -4,7 +4,8 @@ iOS の設計 / クラス責務分担
 使えるの
 
 - Behavior クラス
-- APIClient の Service への分離. (NSNotificationCenter でやり取り)
+- APIClient の Service への分離. (NSNotificationCenter で Pub-Sub 的やり取り)
+  * 何故か？ViewController は LifeCycle が複雑なため。短命。ViewController に View だけで閉じない操作（たとえば永続的な操作）を含めるのはダメ。
 - 独自 View への分離 (View に自分自身の面倒を見てもらう。Gesture とか。)
 - Datasource の分離
 - Delegate の分離
