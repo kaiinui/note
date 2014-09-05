@@ -43,6 +43,16 @@ NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
 
 に突っ込めば Main Thread で動く。
 
+`NSOperationQueue`
+---
+
+`maxConcurrentOperationCount` を弄ることで最大同時実行数を制御出来る。
+
+疑問
+---
+
+- `NSOperationQueue` は誰が持てばいいんだろう？または Singleton 的に使う？
+
 References
 ---
 
@@ -50,3 +60,5 @@ References
 - http://nshipster.com/nsoperation/
 - NSOperation Class Reference : https://developer.apple.com/library/mac/documentation/Cocoa/Reference/NSOperation_class/Reference/Reference.html
 - Core Data Programming Guide: Concurrency with Core Data : https://developer.apple.com/library/mac/documentation/cocoa/conceptual/coredata/articles/cdConcurrency.html
+- Working with the NSOperationQueue Class - Tuts+ Code Tutorial : http://code.tutsplus.com/tutorials/working-with-the-nsoperationqueue-class--mobile-14993
+- もう怖くないCocoaの並列処理（GCD & NSOperation/NSOperationQueue） - $ cat /var/log/shin : http://shin.hateblo.jp/entry/2014/05/05/234912
