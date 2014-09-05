@@ -48,6 +48,11 @@ API 限定で、ドキュメントのフォーマットとして, JSON Schema �
 - Balsamiq - https://balsamiq.com/
 - cacoo - https://cacoo.com/lang/ja/
 
+写真を共有する
+
+- [gyazo](https://gyazo.com/ja) - SS, Screencast を共有
+- vine - アプリの動作とかを手っ取り早く共有
+
 ### 開発においてなにを重点的にドキュメントにすべきか？
 
 1. 結合のための情報 (document generator)
