@@ -16,6 +16,7 @@ Sources of `RACSignal`
 - `RAC(self.textEdit.text)`
 - `AFNetworking+RAC` の `- rac_GET:params:` - レスポンスをシリアライズした結果が value として流される。
 - `+ createSignal` で `RACSignal` を作ることが出来る。
+- あとは、デザインパターンがある https://github.com/tLewisII/RACExample/blob/master/Pods/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal.h
 
 `RACObserve(object, keypath)` は `object` の `keypath` の value を Observe して、変更されたらその value を signal として流す。
 
@@ -44,3 +45,4 @@ References
 
 - http://qiita.com/ikesyo/items/ff0fdc179baa92a144ee - まとめリンク
 - Getting Started with ReactiveCocoa | Teehan+Lax : http://www.teehanlax.com/blog/getting-started-with-reactivecocoa/
+- RACExample/RACSignal.h at master · tLewisII/RACExample : https://github.com/tLewisII/RACExample/blob/master/Pods/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal.h
