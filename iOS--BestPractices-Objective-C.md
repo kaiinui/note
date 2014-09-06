@@ -10,6 +10,7 @@
 - RAC を利用する。(`ReactiveCocoa`)
 - モジュール化し、CocoaPods で利用する
 - .h ではむやみに `#import` せず `@class` で前方宣言する
+- `NSNotificationCenter` を多用しない
 - appledoc, jazzy でドキュメンテーションする
 
 番外編
