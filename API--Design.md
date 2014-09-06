@@ -220,3 +220,8 @@ Tools
 - [Apiary](http://apiary.io/) - API Blueprint というスキーマから、Validation や Doc などを生成
 - [Swagger UI](https://github.com/wordnik/swagger-ui) - JSON から「試せる API Doc」を生成
 - [prmd](https://github.com/interagent/prmd) - JSON Schema を色々出来るツール by Heroku
+
+References
+---
+
+- AWS - DynamoDB HTTP API が独特な仕様なので紹介 - Qiita : http://qiita.com/voluntas/items/a3ee5b0e2843d589d45f
