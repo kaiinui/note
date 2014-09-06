@@ -32,6 +32,7 @@ Authentication
 - http://apiux.com/2013/03/21/authentication-dont-be-clever/
 - http://www.infoq.com/news/2010/01/rest-api-authentication-schemes
 - http://hamasyou.com/blog/2010/11/18/api-rest/
+- Security - いろいろなサービスのAPIをcurlで叩くときの認証の扱い - Qiita : http://qiita.com/hash/items/ebcdb5135c4a42001f02
 
 Batch Request
 ---
