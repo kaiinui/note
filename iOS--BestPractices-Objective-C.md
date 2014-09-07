@@ -11,6 +11,7 @@
 - RAC を利用する。(`ReactiveCocoa`)
 - モジュール化し、CocoaPods で利用する
 - .h ではむやみに `#import` せず `@class` で前方宣言する
+- 循環参照は `libextobjc` で避ける
 - `NSNotificationCenter` を多用しない
 - appledoc, jazzy でドキュメンテーションする
 
