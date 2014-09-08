@@ -52,6 +52,7 @@ NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
 ---
 
 - `NSOperationQueue` は誰が持てばいいんだろう？または Singleton 的に使う？
+  * -> Model と同じく、Lifecycle に巻き込まれないために、`OperationManager` とか `OperationService` 的なクラスを Singleton で持つ。役割はただ `NSOperationQueue` を retain するだけ。
 
 References
 ---
