@@ -48,6 +48,53 @@ NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
 
 `maxConcurrentOperationCount` を弄ることで最大同時実行数を制御出来る。
 
+`[NSOperationQueue mainQueue]` に雑に突っ込むと、 `maxConcurrentOperationCount = 1` であり、かつ main thread で動く Operation になる。
+
+なので、自分で `[[NSOperationQueue alloc] init];` して持つ。持ち方は、Lifecycle に巻き込まれてはいけないので、`Manager` 的クラスを Singleton で持つのが良いと思う。
+
+Asynchronous Operation
+---
+
+Synchronous Operation で雑にやる場合は、`- main` をオーバーライドするだけでよい。 `- main` の return で勝手に Operation を終わり、 dealloc まで済ませてくれる。
+
+ただし、Asynchronous Operation とか、色々非同期になっていて `- main` の return で死んでほしくない場合は、次のようにやる。
+
+#### `isFinished` をオーバーライドする
+
+1. `@interface` で `isFinished` をオーバーライドする。
+2. 処理を終了させたい所で、 `self.isFinished = YES` とする。
+
+これだけで Asynchronous Operation 対応できる。
+
+```objc
+// KISomeOperation.h
+
+@interface KISomeOperation : NSOperation
+
+@property (nonatomic, assign) BOOL isFinished;
+
+@end
+```
+
+```objc
+// KISomeOperation.m
+
+- (void)main {
+    @weakify(self);
+    [someThing doSomeThingAsynchronouslyWithBlock:^{
+        @strongify(self);
+        self.isFinished = YES;
+    }];
+}
+```
+
+注意点は、`@weakify` しないと循環参照して Operation が死なない。
+
+テスト
+---
+
+[TODO] あとで書く
+
 疑問
 ---
 
