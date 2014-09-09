@@ -41,3 +41,4 @@ References
 
 - https://developer.apple.com/library/ios/documentation/general/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html
 - http://kenmaz.hatenadiary.jp/entry/20110826/1314376887
+- デバイスのアクセス許可を求めるUI | Reflection | UIデザイン会社Standard Incのブログ : http://www.standardinc.jp/reflection/article/ui-to-seek-the-permission-of-the-device/
