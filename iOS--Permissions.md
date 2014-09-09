@@ -9,9 +9,9 @@ iOS, 権限の認証が個別なのでうざいことになりやすい。ベス
 4. Denied のときの Rescue をする
 5. AniGIF て案内が提供されていれば尚良いと思う
 
-![](https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png)
+<img src="https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png" width="240px" />
 
-![](https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg)
+<img src="https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg" width="240px" />
 
 トリビア
 ===
