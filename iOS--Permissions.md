@@ -12,3 +12,32 @@ iOS, 権限の認証が個別なのでうざいことになりやすい。ベス
 ![](https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png)
 
 ![](https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg)
+
+トリビア
+===
+
+文言を変える
+---
+
+`<appname>-Info.plist` の `NSPhotoLibraryUsageDescription` を弄ることで、「カメラロールへのアクセスを許可しますか」の定型文の下に、自分の書いた文章を出せる。
+
+何故アクセスが必要かの説明があれば、安心して許可しやすい。
+
+<img src="https://raw.githubusercontent.com/AquaSupport/AQSPermissionsLib/master/SS_2.png" width="240px" />
+
+こんなかんじ
+
+Permission を何回もテストしたい
+--
+
+Bundle Identifier をイイ感じに変えまくれば別アプリとして認識してくれる。
+
+Bundle Identifier を好きに変えてテスト出来ない通知だけはうまくいかないので、これを参照。
+
+http://kenmaz.hatenadiary.jp/entry/20110826/1314376887
+
+References
+---
+
+- https://developer.apple.com/library/ios/documentation/general/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html
+- http://kenmaz.hatenadiary.jp/entry/20110826/1314376887
