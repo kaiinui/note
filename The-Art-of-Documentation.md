@@ -41,6 +41,7 @@ Documentation は大事な行為だと思う。何故か？
 API 限定で、ドキュメントのフォーマットとして, JSON Schema と Swagger Docs が使える
 
 - [Swagger Docs](https://helloreverb.com/developers/swagger) - 試せる API Doc [サンプル(Petstore)](http://petstore.swagger.wordnik.com/)
+  * https://github.com/yvasiyarov/swagger - Swagger を Go で
 - [JSON Schema](http://json-schema.org/) - JSON でメタ情報を記述するフォーマット
 
 絵を描くツール
