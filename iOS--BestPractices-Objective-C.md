@@ -1,6 +1,8 @@
 オレオレ Effective Objective-C
 ===
 
+- むやみに public method を増やさない
+- interface を分割する（あるいはカテゴリでも良い。）
 - instance variable ではなく property を使う
 - メソッドを細かく分ける
 - `#pragma mark` をたくさん付ける
@@ -14,6 +16,10 @@
 - 循環参照は `libextobjc` で避ける
 - `NSNotificationCenter` を多用しない
 - appledoc, jazzy でドキュメンテーションする
+- 「継承より合成」 Category + `objc_setAssociatedObject` で出来る。
+  * `UIView` 関連を拡張したい時などは特に。(Reference の "iOS UI Component API Design" を参照)
+  * Options クラスを提供するのも良いデザインになりやすい
+- 定数は定数クラスを用意してそこからとる。 `R.m` みたいな。
 
 番外編
 
@@ -22,3 +28,28 @@
   - `R+Color.m` で `NSColor` をまとめる
   - `R+Number.m` で定数値をまとめる
 - `Aspects.m` を上手く使う
+
+Friend Methods
+---
+
+クラス間の連携で使うメソッドを protected っぽくしたい。
+
+protocol を分けるか、category を使えば良い。
+
+Category を使う場合は、`SomeClass+FriendMethods.h` とか。
+
+Discussions
+---
+
+- view の取り扱い？
+  * `Storybaord - instantiateViewControllerWithIdentifier:` は使う？
+  * `.xib` は使う？
+  * `.xib` からのロードはどうする？
+  * `.xib` からロードしたとき、`IBAction` は？
+- Runtime Attributes の取り扱い
+  * 良いけど、コード外の動作が増えてしまう。
+
+References
+---
+
+- http://modocache.svbtle.com/ios-ui-component-api-design
