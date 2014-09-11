@@ -9,7 +9,7 @@ iOS, 権限の認証が個別なのでうざいことになりやすい。ベス
 4. Denied のときの Rescue をする
 5. AniGIF て案内が提供されていれば尚良いと思う
 
-<img src="https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png" width="240px" /> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg" width="240px" /> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content01.png" width="480px"> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content02.png" width="480px">
+<img src="https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png" width="240px" /> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg" width="240px" /> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content01.png" width="480px"> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content02.png" width="480px"> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/slack_for_ios_upload%20%281%29.png" width="240px" /> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/slack_for_ios_upload%20%282%29.png" width="240px" />
 
 トリビア
 ===
