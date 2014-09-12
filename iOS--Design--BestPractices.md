@@ -17,9 +17,31 @@ iOS の設計 / クラス責務分担
 
 とにかく ViewController に全てを書くのをやめる。
 
+妄想
+---
+
+VIPER のやつを参考に。
+
+- `Router` - ViewController の instantiate と画面遷移
+- `Decorator` - View を Decoration する. (`view.layer.cornerRadius = 12.0f;`)
+- `ViewFactory` - View を作り、初期化する
+- `ViewController` - 
+- `Interactor` - 操作を担当。「アルバムを作る」 => `AlbumInteractor`
+- `Presenter` - View を操作するロジック (DataSource も delegate もここが持つ。)
+- `Repository` - データを要求する。全てのデータはここを経由して取り出される。`NSNotification` で通知。
+- `Entity` - NSManagedObject
+- `Service` - ViewController のライフサイクルに依存しないサービス。Singleton である `ServiceLocator` を用いて retain される。
+
+### 命名規則
+
+- Storyboard は分割する
+- `SomeViewController` に対して Storybaord 名は `SomeViewController.storybaord` であり、 identifier は `SomeViewController`
+- `SomeView` に対して、`.xib` は `SomeView.xib`
+
 references
 ---
 
+- [Architecting iOS Apps with VIPER](http://www.objc.io/issue-13/viper.html)
 - [BehaviorクラスによるiOSアプリケーションの設計](http://tech.vasily.jp/ios_behavior_pattern)
 - [iOS/Androidアプリエンジニアが理解すべき「Model」の振る舞い](http://www.slideshare.net/mokemokechicken/iosandroidmodel)
 - [JLRoutes](https://github.com/joeldev/JLRoutes)
