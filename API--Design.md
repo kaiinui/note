@@ -221,6 +221,7 @@ Tools
 - [Apiary](http://apiary.io/) - API Blueprint というスキーマから、Validation や Doc などを生成
 - [Swagger UI](https://github.com/wordnik/swagger-ui) - JSON から「試せる API Doc」を生成
 - [prmd](https://github.com/interagent/prmd) - JSON Schema を色々出来るツール by Heroku
+- [RESTX](http://restx.io/) - REST endpoint, testing, docmentation
 
 References
 ---
