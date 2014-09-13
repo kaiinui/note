@@ -30,7 +30,8 @@ VIPER のやつを参考に。
 - `Presenter` - View を操作するロジック (DataSource も delegate もここが持つ。)
 - `Repository` - データを要求する。全てのデータはここを経由して取り出される。`NSNotification` で通知。
 - `Entity` - NSManagedObject
-- `Service` - ViewController のライフサイクルに依存しないサービス。Singleton である `ServiceLocator` を用いて retain される。
+- `Service` - ViewController のライフサイクルに依存しないサービス。Singleton である `ServiceLocator` を用いて retain される。サービスはビジネスロジックのことを知らずに、与えられた命令を只実行する。汎用コンポーネントでなければならない。
+  * `Operation` - サービスが何かしらやる場合は、`NSOperation` を用いることが推奨される
 
 ### 命名規則
 
