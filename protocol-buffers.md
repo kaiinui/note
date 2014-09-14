@@ -117,3 +117,20 @@ message Book {
 
 ![](http://i.gyazo.com/e2a3997f0ed36ef09626cac34888a42a.png)
 
+レポジトリ
+---
+
+- https://github.com/kaiinui/try-protobuf-ios
+- https://github.com/kaiinui/try-protobuf-go
+
+今後の課題
+---
+
+- `List<Book>` はどうするか？ `BookCollection` という Message で reeatable な Book にしている？
+
+参考資料
+---
+
+- https://github.com/google/protobuf
+- http://protobuf.axo.io/#objc
+- https://code.google.com/p/goprotobuf/source/browse/README
