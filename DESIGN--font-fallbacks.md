@@ -1,7 +1,7 @@
 Font fallbacks
 ---
 
-Web で Font 無い場合の Fallback を考える。
+Font 無い場合の Fallback を考える。
 
 ### Myriad Pro
 
@@ -16,6 +16,12 @@ Google Webfont 使うしかない？
 ### Lucida Grande
 
 Looks like widely adopted?
+
+### Mobile では？
+
+font は各 weight / style に対して 200KB - 400KB 程度なので埋め込んで使う。
+
+当たり前だが Myriad Pro と Avenir Next は otf とかないので代替フォントを Google Font とかで探す。あるいは Adobe から買う。
 
 References
 ---
