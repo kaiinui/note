@@ -12,6 +12,7 @@ API デザイン (kaiinui/api_design-resources から移動)
 - [\[その１\] Netflix: APIの改善と継続的デリバリー](http://wazanova.jp/items/678) - Netflix は如何に 800 種のデバイスに利用される API を運用しているのか？
 - [Ruby RoguesメンバとiOSエンジニアのAPI議論](http://wazanova.jp/items/1211) - 一貫性、ドキュメント、モバイル
 - [APIデザインの極意 Java/NetBeansアーキテクト探究ノート](http://hamasyou.com/blog/2014/08/30/484433591x/)
+- [jsonapi.org](http://jsonapi.org/format/)
 
 Authentication
 ---
