@@ -29,6 +29,10 @@
   - `R+Number.m` で定数値をまとめる
 - `Aspects.m` を上手く使う
 
+UI 編
+
+- `UIControl` はタップ認識領域を拡げる http://naoty.hatenablog.com/entry/2014/09/18/012246
+
 Friend Methods
 ---
 
