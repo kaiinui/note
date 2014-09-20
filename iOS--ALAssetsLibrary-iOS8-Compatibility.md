@@ -76,7 +76,11 @@ ALAssetsGroup - Name:Recently Added, Type:Saved Photos, Assets count:12
  NSLog(@"%@", [group valueForKey:ALAssetsGroupPropertyType]);
 ```
 
-全部死ぬ。 `unrecoznied selector`
+全部死ぬ。 
+
+```
+Terminating app due to uncaught exception 'NSUnknownKeyException'
+```
 
 他色々事案
 ---
