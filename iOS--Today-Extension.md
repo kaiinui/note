@@ -24,6 +24,12 @@ http://qiita.com/koogawa/items/994878047f76cf125b2d
   * `NSUserDefaults` はちょっとのコードで出来る `http://tapadoo.com/2014/sharing-nsuserdefaults-between-your-app-and-a-today-extension-on-ios-8/`
   * `UIPasteBoard` もちょっとのコードで出来る。
  
+NSUserDefaults の共有
+---
+
+- AppGroup を作る
+- AppGroup の Certificate を登録する
+
 通知情報
 ---
 
