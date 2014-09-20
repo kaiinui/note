@@ -17,6 +17,13 @@
 
 http://qiita.com/koogawa/items/994878047f76cf125b2d
 
+注意すること
+---
+
+- アプリと色々共有出来ない
+  * `NSUserDefaults` はちょっとのコードで出来る `http://tapadoo.com/2014/sharing-nsuserdefaults-between-your-app-and-a-today-extension-on-ios-8/`
+  * `UIPasteBoard` もちょっとのコードで出来る。
+ 
 通知情報
 ---
 
