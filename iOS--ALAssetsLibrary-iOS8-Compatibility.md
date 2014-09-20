@@ -66,6 +66,18 @@ description を呼ぶと
 ALAssetsGroup - Name:Recently Added, Type:Saved Photos, Assets count:12
 ```
 
+5. `ALAssetsGroup` の `- valueForKey:` で死ぬ
+---
+
+```objc
+ NSLog(@"%@", [group valueForKey:ALAssetsGroupPropertyName]);
+ NSLog(@"%@", [group valueForKey:ALAssetsGroupPropertyPersistentID]);
+ NSLog(@"%@", [group valueForKey:ALAssetsGroupPropertyURL]);
+ NSLog(@"%@", [group valueForKey:ALAssetsGroupPropertyType]);
+```
+
+全部死ぬ。 `unrecoznied selector`
+
 他色々事案
 ---
 
