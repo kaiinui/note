@@ -93,3 +93,9 @@ Terminating app due to uncaught exception 'NSUnknownKeyException'
 
 理由は不明だが何もしなくても 600KB ほど使う。libdispatch が色々してるっぽい。
 終わっても開放されない
+
+```objc
+    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:nil failureBlock:nil];
+```
+
+これで 600KB くらい使う。libdispatch がとにかく重い。
