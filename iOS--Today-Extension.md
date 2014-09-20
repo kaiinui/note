@@ -1,7 +1,26 @@
+制限事項
+---
+
+- パーミッションはアプリ側のパーミッションが継承される。
+- 画面サイズの制約
+  * 1 スクロール大くらいの画面しか無理
+- 位置情報の制約
+  * Today Extension で位置を取るには、アプリ側で「Allow Location Always」という強いパーミッションを取る必要が有る。これは、アプリが裏側で位置情報取る場合のパーミッション。
 - CALayer 弄れない
   * 角丸とかやりたいなら、GPUImage で強引にやる
+- メモリの制約
+  * iPhone5 iOS8.0 の場合、メモリ 6MB くらいで死ぬ。画面に何も表示されない。
+  * また、何もしなくても 3MB くらいいく
+  * PhotoKit を動かしたら + 1.7MB くらい。
+- ジェスチャが取れない
+  * TapGestureRecognizer は効く
 
 http://qiita.com/koogawa/items/994878047f76cf125b2d
+
+通知情報
+---
+
+http://hrk-ys.blogspot.jp/2014/06/whats-new-in-ios-notifications.html
 
 あと某氏から教えてもらった（一応 NDA で伏せておく）
 
@@ -49,3 +68,4 @@ kaiinui [11:55 PM]
 サイズは 3.5 inch と 4 inch でそれぞれ決まってる。
 
 ```
+
