@@ -57,3 +57,23 @@ ALAssetsLibrary が iOS8 で変わったの
 
 手持ちの iPhone 4S は 7 時代にアルバムを作っていないっぽいので、 `ALAssetsGroupAll` でやっても `ALAssetsGroupSavedPhotos` でしか enumerate 出来ず、やはり iOS8 以降の写真しかとれない。
 
+4. `ALAssetsGroupSavedPhotos` は「最近追加した項目」になっている
+---
+
+description を呼ぶと
+
+```
+ALAssetsGroup - Name:Recently Added, Type:Saved Photos, Assets count:12
+```
+
+他色々事案
+---
+
+#### ALAssetsLibrary は写真をキャッシュする
+
+表側でいくら頑張ろうと、 ALAssetsLibrary がフレームワーク側でキャッシュをしてくれるのでメモリが重い
+
+#### `enumerateUsingBlock` が何故か 600KB ほど使う
+
+理由は不明だが何もしなくても 600KB ほど使う。libdispatch が色々してるっぽい。
+終わっても開放されない
