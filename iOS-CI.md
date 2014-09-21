@@ -12,6 +12,17 @@ xctools
 xcodebuild -workspace InPlaceEdit.xcworkspace -scheme InPlaceEditTests -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch 64-bit)' test
 ```
 
+指定出来るリストは
+
+```
+iPhone Retina (3.5-inch)
+iPhone Retina (4-inch)
+iPhone Retina (4-inch 64-bit)
+iPad
+iPad Retina
+iPad Retina (64-bit)
+```
+
 Scheme
 ---
 
