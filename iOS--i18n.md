@@ -72,3 +72,14 @@ xcodebuild -workspace Post.xcworkspace -scheme PostTests-en -destination 'platfo
 ```
 
 実際的には for 文で回す。
+
+```sh
+#!/bin/sh
+
+for lang in ja en de da el en-GB es-MX es fr-CA fr id it ko ms nl pt-PT pt ru sv th tr vi zh-Hans zh-Hant
+do
+    xcodebuild -workspace Post.xcworkspace -scheme "PostTests-$lang" -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch 64-bit)' test
+done
+```
+
+みたいな感じ
