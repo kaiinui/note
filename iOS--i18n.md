@@ -43,6 +43,16 @@ it(@"Label 'Hello World' should be not so long", ^{
 });
 ```
 
+また、謝った翻訳ラベルを指定していないかテストが出来る。
+
+```
+it(@"Label 'Hello World' should be properly translated", ^{
+    expect(helper_isAllUpperCase([R string_hello_world])).to.equal(NO);
+});
+```
+
+ここで、 `helper_isAllUpperCase()` は lowercase を含まないかどうかを返す関数である（e.g. `HELLO_WORLD` に対して `YES` を返す）
+
 ### Scheme を言語毎に作る
 
 以上はテスト毎に言語を設定すると手間が死ぬので自動化する。
