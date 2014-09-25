@@ -93,3 +93,5 @@ done
 
 `- setFontSizeAdjustToWidth` を使うと良い。指定は Font Scale が良い。
 UILabel は高さの Constraints だけ指定し、横は 20 くらいそれぞれ空けた 100% でセンタリングが良い。
+
+Line Break を word wrap に設定し、 Line count = 0 にすれば自動的に改行する
