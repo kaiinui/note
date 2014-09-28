@@ -1,0 +1,1 @@
+iOS View Controllerプログラミングガイド : https://gist.github.com/shinyaohira/6482235#ios-6%E4%BB%A5%E9%99%8D%E3%81%AE%E5%A0%B4%E5%90%88view-controller%E3%81%AF%E5%BF%85%E8%A6%81%E3%81%AA%E3%81%A8%E3%81%8D%E3%81%ABview%E3%82%92%E3%82%A2%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B
