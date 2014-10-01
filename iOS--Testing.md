@@ -30,6 +30,24 @@ Storyboard からは下記の場所で弄れる。
 view.accessibilityLabel = @"some_accessibility_label";
 ```
 
+### `Photo Library` をテストする
+
+方法は二つある。
+
+1. `ALAsstesLibrary`, `PHAssetsLibrary` を mock する
+2. Safari でひたすら画像を保存する
+
+1.はなかなかの苦行なので、とりあえず2.でお茶を濁しておくのが良い。
+
+実はシミュレータ上においても、Safari で画像を開き、ロングタップで画像を保存することが出来る。
+これは、もちろん `ALAssetsLibrary` などで読み取ることが出来る。
+
+普通の iPhone で撮った写真を Dropbox でアップロードし、片っ端からダウンロードするのが良いと思う。
+
+ただし、シミュレータの端末種別を変えると、ライブラリの内容も変わるので注意。
+
+または、数が多ければ、zip を受け取って Photo Library に全てぶち込む専用のアプリを作って、シミュレータをセットアップするのが良い。
+
 ### `UICollectionView` の特定のセルをタップする
 
 ```objc
