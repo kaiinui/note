@@ -14,6 +14,7 @@ iOS の設計 / クラス責務分担
 - rdotm の導入 (まあ。typo によるミスの防止)
 - RAC の導入 (MVVM, Model-View binding)
 - Realm の導入 (Model)
+- コミュニケーションパターン (Communication Patterns - Foundation - objc.io issue #7 : http://www.objc.io/issue-7/communication-patterns.html)
 
 とにかく ViewController に全てを書くのをやめる。
 
