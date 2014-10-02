@@ -15,6 +15,27 @@ xcodebuild -workspace InPlaceEdit.xcworkspace -scheme InPlaceEditTests -destinat
 指定出来るリストは
 
 ```
+OS:7.1, name:iPad 2
+OS:8.0, name:iPad 2
+OS:7.1, name:iPad Air
+OS:8.0, name:iPad Air
+OS:7.1, name:iPad Retina
+OS:8.0, name:iPad Retina
+OS:7.1, name:iPhone 4s
+OS:8.0, name:iPhone 4s
+OS:7.1, name:iPhone 5
+OS:8.0, name:iPhone 5
+OS:7.1, name:iPhone 5s
+OS:8.0, name:iPhone 5s
+OS:8.0, name:iPhone 6 Plus
+OS:8.0, name:iPhone 6
+OS:8.0, name:Resizable iPad
+OS:8.0, name:Resizable iPhone
+```
+
+以下は古い情報。（iOS 7.1 と Xcode 5.1）
+
+```
 iPhone Retina (3.5-inch)
 iPhone Retina (4-inch)
 iPhone Retina (4-inch 64-bit)
