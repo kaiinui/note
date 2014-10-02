@@ -2,6 +2,8 @@ iOS 開発の便利ツールズ
 ===
 
 - objClean : http://objclean.com/index.php
+- jfahrenkrug/StoryboardLint : https://github.com/jfahrenkrug/StoryboardLint
+- xcconfigs
 - mitmproxy
 - KILogInject
 - PonyDebugger
