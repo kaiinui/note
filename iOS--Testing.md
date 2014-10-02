@@ -62,3 +62,8 @@ cell.accessibilityLabel = [NSString stringWithFormat:@"kif_cell_%d", indexPath.r
 
 [tester tapViewWithAccessibilityLabel:@"kif_cell_1"]; // Taps second cell
 ```
+
+References
+---
+
+- Zillow: モバイルアプリの自動化テストフレームワーク - ワザノバ | wazanova : http://wazanova.jp/items/708
