@@ -82,6 +82,11 @@ Flappy Bird の bird の角度とかも簡単に出来る。
 
 http://syonx.hatenablog.com/entry/2014/07/05/103418 にまとまっている
 
+エディタ
+---
+
+- TypeScript, JavaScript ともに WebStorm が良い
+
 参考リンク
 ---
 
