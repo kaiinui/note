@@ -87,6 +87,16 @@ http://syonx.hatenablog.com/entry/2014/07/05/103418 にまとまっている
 
 - TypeScript, JavaScript ともに WebStorm が良い
 
+色んな対応状況
+---
+
+WebGL 描画がハイパフォーマンスで、対応してないブラウザは自動的に Canvas 描画にフォールバックされる。
+
+モダンブラウザは殆ど対応。モバイルは
+
+- Safari -> 8 以上が WebGL 描画 (Photon Storm » Blog Archive » A first look at what iOS8 means for Phaser and Pixi.js (hint: bunnies, LOTS of them!) : http://www.photonstorm.com/html5/a-first-look-at-what-ios8-means-for-phaser-and-pixi-js-hint-bunnies-lots-of-them)
+- Android は最新の Chrome がWebGL 描画。標準ブラウザは Canvas
+
 参考リンク
 ---
 
