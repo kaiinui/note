@@ -47,7 +47,15 @@ iPad Retina (64-bit)
 Scheme
 ---
 
-`InPlaceEdits` みたいな Scheme を作る必要有る。（しなくとも、`InPlaceEdit` でテスト出来る？）
+左上の `プロジェクト名` を押して、`Manage Scheme` を押す。
+
+![](https://dl.dropboxusercontent.com/u/7817937/_github/__Film/__train_activate_travis/1.png)
+
+`プロジェクト名` の Shared を ON にする。
+
+![](http://i.gyazo.com/e8982094ab941bdcdde1153553a74895.png)
+
+![](http://i.gyazo.com/84ae618bcabe79d811cee39ebdfe00f4.png)
 
 .travis.yml
 ---
