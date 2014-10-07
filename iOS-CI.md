@@ -55,6 +55,8 @@ Scheme
 
 ![](http://i.gyazo.com/e8982094ab941bdcdde1153553a74895.png)
 
+以下のようになっているのを確認。
+
 ![](http://i.gyazo.com/84ae618bcabe79d811cee39ebdfe00f4.png)
 
 .travis.yml
