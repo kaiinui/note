@@ -67,3 +67,4 @@ References
 ---
 
 - Zillow: モバイルアプリの自動化テストフレームワーク - ワザノバ | wazanova : http://wazanova.jp/items/708
+- Etsy: モバイルアプリの継続的インテグレーション - ワザノバ | wazanova : http://wazanova.jp/items/1096
