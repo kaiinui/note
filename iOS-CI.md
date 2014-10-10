@@ -80,3 +80,4 @@ References
 - Debugging XCTool’s NSInternalInconsistencyException: Failed while trying to gather build settings for your scheme : http://code.dblock.org/debugging-xctools-nsinternalinconsistencyexception-failed-while-trying-to-gather-build-settings-for-your-scheme
 - Xcode5環境で、xcodebuildを使ってユニットテスト実行する方法 - Qiita : http://qiita.com/k_kinukawa/items/6c5ef09ad86ac9c75a8c
 - http://kaspermunck.github.io/2013/04/running-kiwi-specs-with-travis-ci/
+- Etsy: モバイルアプリの継続的インテグレーション - ワザノバ | wazanova : http://wazanova.jp/items/1096
