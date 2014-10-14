@@ -20,3 +20,9 @@ Cloud Storage
 ---
 
 - T.Yokoyamaのブログ: GAE/GでGoogle Cloud Storageを利用するには（１） : http://takashi-yokoyama.blogspot.jp/2012/08/gaeggoogle-cloud-storage.html
+- (Java) appengine-gcs-client - App Engine Clients for Google Cloud Storage - Google Project Hosting : https://code.google.com/p/appengine-gcs-client/
+
+Memcache
+---
+
+- Memcache Go API Overview - Go — Google Cloud Platform : https://cloud.google.com/appengine/docs/go/memcache/
