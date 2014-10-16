@@ -16,7 +16,7 @@ App Preview
 ### ツール
 
 - Final Cut Pro X
-- Motion
+- Motion 5 **$50** (Mac App Store - Motion : https://itunes.apple.com/us/app/motion/id434290957?mt=12&v0=www-naus-motion-buynow)
 - QuickTime Pro
 
 ### Spec
