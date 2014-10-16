@@ -8,6 +8,11 @@ App Preview
 
 - Final Cut Pro X
 - Motion
+- QuickTime Pro
+
+### Spec
+
+![](http://kisakata.jp/wp-content/uploads/5df3982cff4cd8656dbf7c8da620c164.png)
 
 出来が良いと思うの
 ---
@@ -23,3 +28,4 @@ References
 - App Previews (video on the iOS 8 App Store): thoughts and tips : http://www.apptamin.com/blog/app-previews/
 - The Business of App Design - Getting Started with App Previews : http://dancounsell.com/articles/getting-started-with-app-previews
 - AppStoreのアプリ動画 App Previews作成に便利なツールの紹介 : http://umememo.com/archives/305
+- iTunes ConnectでAppビデオプレビューをアップロードする | KSKT | Good UI, Good UX : http://kisakata.jp/blog/itunes-connect-video-preview/
