@@ -4,10 +4,16 @@ Twitter, FB App Ads
 - http://www.quora.com/What-is-the-cost-per-install-of-iOS-app-in-Facebooks-new-Mobile-App-Install-Ads-program
 - https://ads.twitter.com/
 
+### Twitter Ad
+
+直接の Retweet、ふぁぼに課金。（Retweet されたツイートの Fav, Retweet は無料）
+「ダウンロード」とか、ボタンのアクションに課金。
+
 CPI Ads
 ---
 
 - Admob
+- TapJoy...
 - ...
 
 ASO
@@ -15,6 +21,11 @@ ASO
 
 - SearchMan
 - SensorTower
+
+PR
+---
+
+各国の代理店
 
 Press-Relation
 ---
