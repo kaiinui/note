@@ -53,3 +53,10 @@ HTTP request を Stub 出来る。
     return [OHHTTPStubsResponse responseWithFileAtPath:@"500_response.json" statusCode:500 headers:nil];
 }];
 ```
+
+References
+---
+
+- Mocking Network Requests With OHHTTPStubs. - Adoption Curve Dot Net : http://adoptioncurve.net/archives/2012/10/mocking-network-requests-with-ohhttpstubs/
+- Front Page · OCMock : http://ocmock.org/
+- AliSoftware/OHHTTPStubs : https://github.com/AliSoftware/OHHTTPStubs
