@@ -25,3 +25,14 @@ pod repo push REPO_NAME YOUR_POD.podspec
 ```
 
 で push 出来る。
+
+#### 5.Podfile
+
+```rb
+// Podfile
+
+source "https://github.com/TEAM/PATH.git"
+source "https://github.com/CocoaPods/Specs.git"
+```
+
+と `Podfile` に付けることで Pods をプライベートレポジトリからサーチすることが出来る
