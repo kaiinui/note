@@ -11,6 +11,18 @@ iOS, 権限の認証が個別なのでうざいことになりやすい。ベス
 
 <img src="https://dl.dropboxusercontent.com/u/7817937/_github/BwYPsj5IUAAc7dF-1.png" width="240px" /> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/img_20140905_130921.jpg" width="240px" /> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content01.png" width="480px"> <img src="http://www.standardinc.jp/reflection/wp-content/uploads/2014/08/2014-08-27_content02.png" width="480px"> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/slack_for_ios_upload%20%281%29.png" width="240px" /> <img src="https://dl.dropboxusercontent.com/u/7817937/_github/slack_for_ios_upload%20%282%29.png" width="240px" />
 
+iOS8+ は
+---
+
+- iOS8で復活した設定画面へのURLスキーム - Qiita : http://qiita.com/Night___/items/3d689d657ee691d2cabe
+
+iOS8 で「自分のアプリ」の設定への URL スキームが復活。コレを使うと「プライバシー」等とリンクがある設定ページに飛べる。
+「プライバシー」から写真や通知等の Permission を弄れるので、iOS7 よりも Permission の復旧への導線を引きやすい。
+
+### 参考
+
+https://vine.co/v/OZBY7mPw7ej
+
 トリビア
 ===
 
