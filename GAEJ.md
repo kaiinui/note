@@ -49,6 +49,26 @@ oout.close();
 
 `multipart/form-data` からファイルをとるのは、Commons Fileupload などを用いる。
 
+#### ↑ で書き込むとファイルがぶっこわれる
+
+java - Google Cloud Storage createOrReplace file is broken (different size, ...) - Stack Overflow : http://stackoverflow.com/questions/18214346/google-cloud-storage-createorreplace-file-is-broken-different-size
+
+先頭に 20 bytes ほど余計なデータが入るのと、全体的に良く分からないバイトが入って壊れる。
+
+```java
+GcsOutputChannel outputChannel = gcsService.createOrReplace(new GcsFilename(kBucketName, filename), options);
+InputStream in = item.openStream();
+
+try {
+    copy(in, Channels.newOutputStream(outputChannel));
+} finally {
+    in.close();
+    outputChannel.close();
+}
+```
+
+などとやればおk。つまり、`ObjectOutputStream` を挟まなければおk。
+
 References
 ---
 
