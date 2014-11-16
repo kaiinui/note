@@ -54,3 +54,4 @@ References
 
 - objectify-appengine - The simplest convenient interface to the Google App Engine datastore - Google Project Hosting : https://code.google.com/p/objectify-appengine/
 - Google App Engine for Java Questions - Google App Engine — Google Cloud Platform : https://cloud.google.com/appengine/kb/java
+- Google App Engine ～ クエリとその制限 | R-Labs : http://blog.r-learning.co.jp/archives/448
