@@ -4,6 +4,21 @@ Testing
 - Unit: `Specta`, `Expecta`, `OCMockito`
 - E2E: `KIF`, `Appium`
 
+### `XCTest` で非同期
+
+```objc
+- (void)testThatItAppendsAString;
+{
+    NSString *s1 = @"Foo";
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Handler called"];
+    [s1 appendString:@"Bar" resultHandler:^(NSString *result){
+        [expectation fulfill];
+        XCTAssertEqualObjects(result, @"FooBar");
+    }]
+    [self waitForExpectationsWithTimeout:0.1 handler:nil];
+}
+```
+
 ### `NSUserDefaults` をリセット
 
 ```objc
