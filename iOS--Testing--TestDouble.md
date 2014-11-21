@@ -29,6 +29,35 @@ doSomeThingUsingMock();
 
 `[objectMock verityWithDelay:1.0]` などとする。
 
+Notification
+---
+
+NSNotificationCenter part 3: Unit testing notifications with OCMock | Hermes Pique : http://www.hpique.com/2013/12/nsnotificationcenter-part-3/
+
+```objc
+- (void)testNotificationUserInfo
+{
+    NSString *notificationName = @"someName";
+    id observerMock = [OCMockObject observerMock];
+    [[NSNotificationCenter defaultCenter] addMockObserver:observerMock name:notificationName object:_sender];
+    [[observerMock expect] 
+        notificationWithName:notificationName 
+        object:_sender 
+        userInfo:[OCMArg checkWithBlock:^BOOL(NSDictionary *userInfo) {
+            id value = [userInfo objectForKey:@"someKey"];
+               STAssertEqualObjects(expectedValue, value, @"");
+               return YES;
+        }
+    ];
+ 
+    [_sender doSomethingThatPostsTheNotification];
+ 
+    [observerMock verify];
+    [[NSNotificationCenter defaultCenter] removeObserver:observerMock];
+}
+ 
+```
+
 OHHTTPStub
 ---
 
