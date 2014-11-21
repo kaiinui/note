@@ -23,6 +23,10 @@ end
 
 dependency は `s.dependency "AFNetworking", "~> 2.3"` みたいなのをどんどん足す。
 
+##### `.xcdatamodeld`
+
+`.xcdatamodeld` は resource ではなく `source_files` に突っ込む。
+
 利用
 ---
 
