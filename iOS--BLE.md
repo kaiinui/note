@@ -1,1 +1,2 @@
-Core Bluetoothのハマりどころ逆引き辞典 - Qiita : http://qiita.com/shu223/items/f67f1b0fb1840cf0bd63
+- IoTの要(かなめ)！BLE通信をMacだけでデバッグできるようになる方法！ - Qiita : http://qiita.com/kazuph/items/85ae7b350cd8a4209541
+- Core Bluetoothのハマりどころ逆引き辞典 - Qiita : http://qiita.com/shu223/items/f67f1b0fb1840cf0bd63
