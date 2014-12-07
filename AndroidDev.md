@@ -1,6 +1,8 @@
 Android Development
 ===
 
+iOSとの比較つき!Androidでこんなアプリ,こんな機能を作りたかったらこれを見ろ！作りたいアプリに対応するクラス、ライブラリのまとめ！ - Qiita : http://qiita.com/appwatcher/items/7d270de99d63bb9f2be4
+
 Activity 簡単に死ぬ
 ---
 
