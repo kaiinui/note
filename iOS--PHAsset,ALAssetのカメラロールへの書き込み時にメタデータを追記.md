@@ -12,6 +12,8 @@
 
 ALAssetsLibrary は `NSDictionary` でメタデータ（撮影日時、場所）を指定します。ついでに、Orientation も正しく指定しておく必要があります。
 
+http://blog.codecropper.com/2011/05/adding-metadata-to-ios-images-the-easy-way/ が、metadata を簡単に扱うためのカテゴリを提供しています。
+
 ```
 #import "NSMutableDictionary+ImageMetadata.h"
 
