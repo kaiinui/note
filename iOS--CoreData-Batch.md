@@ -5,3 +5,6 @@
 - New in Core Data and iOS 8: Asynchronous Fetching | Big Nerd Ranch : https://www.bignerdranch.com/blog/new-in-core-data-and-iOS-8-asynchronous-fetching/
   * スレッドをまたがずに、スレッドをブロックしない FetchRequest が可能です（素晴らしい）
   * Fetch の Progress を通知することができます。
+
+CoreData 関連つーる
+http://matthewmorey.com/tools-for-core-data/
